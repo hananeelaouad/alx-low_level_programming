@@ -1,20 +1,28 @@
-#include <stdio.h>
-
+#include "holberton.h"
 
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: prints the alphabet in lowercase followed by a new line
+ *
+ * Return: Always 0 (Success)
  */
 
-int main() {
-    char c;
-    char alphabet[27] = "abcdefghijklmnopqrstuvwxyz";
-    for (int i = 0; i < 26; ++i) {
-        c = alphabet[i];
-        putchar(c);
+int main(void)
+{
+    char c = 'a';
+
+    /* loop through alphabet until 'z' */
+    while (c <= 'z')
+    {
+        /* print current character using putchar() */
+        _putchar(c);
+        c++;
     }
-    putchar('\n');
-    return 0;
+
+    /* print newline character using putchar() */
+    _putchar('\n');
+
+    return (0);
 }
 
