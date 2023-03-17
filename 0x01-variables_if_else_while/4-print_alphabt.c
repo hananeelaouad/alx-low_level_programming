@@ -3,27 +3,24 @@
 /**
  * main - Entry point
  *
- * Description: prints the alphabet in lowercase except 'q' and 'e',
+ * Description: prints the alphabet in lowercase except q and e.
  *              followed by a new line
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 
 int main(void)
 {
-    char c = 'a';
+	char ch = 'a';
 
-    while (c <= 'z')
-    {
-          if (ch == 'e' || ch == 'q')
-	    ++ch;
+	while (ch <= 'z')
+	{
+		if (ch == 'e' || ch == 'q')
+			++ch;
+		putchar(ch);
+		++ch;
+	}
+	putchar('\n');
 
-	putchar(ch);
-	++ch;
-
-    }
-    putchar('\n');
-
-    return (0);
+	return (0);
 }
-
