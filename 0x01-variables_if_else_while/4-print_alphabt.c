@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -17,11 +17,11 @@ int main(void)
     {
         if (c != 'e' && c != 'q')
         {
-            _putchar(c);
+            putchar(c);
         }
         c++;
     }
-    _putchar('\n');
+    putchar('\n');
 
     return (0);
 }
