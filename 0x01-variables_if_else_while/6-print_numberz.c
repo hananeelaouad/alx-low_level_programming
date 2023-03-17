@@ -5,17 +5,16 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-    int n;
+	int num;
 
-    for (n = 0; i < 10; n++)
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-      putchar((n % 10) + '0');
+	putchar('\n');
 
-
-    putchar('\n');
-
-    return (0);
+	return (0);
 }
 
