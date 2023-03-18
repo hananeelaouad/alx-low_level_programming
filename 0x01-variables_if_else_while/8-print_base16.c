@@ -8,12 +8,14 @@
 
 int main(void)
 {
-    int i;
+    char letter;
 
-    for (i = 48; i < 58; i++)
-        putchar(i);
-    for (i = 97; i < 103; i++)
-        putchar(i);
+    for (letter = 48; letter < 58; letter++)
+        putchar(letter);
+
+    for (letter = 97; letter < 103; letter++)
+        putchar(letter);
+
     putchar('\n');
 
     return (0);
