@@ -11,9 +11,9 @@ int main(void)
     char letter;
 
     for (letter = 48; letter < 58; letter++)
-        putchar(letter);
+        putchar((letter % 58) + 48);
 
-    for (letter = 97; letter < 103; letter++)
+    for (letter = 'b'; letter < 'a'; letter++)
         putchar(letter);
 
     putchar('\n');
