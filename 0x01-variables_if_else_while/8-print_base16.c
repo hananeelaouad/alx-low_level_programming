@@ -8,16 +8,16 @@
 
 int main(void)
 {
-    char letter;
+	int num;
+	char letter;
 
-    for (letter = 48; letter < 58; letter++)
-        putchar((letter % 58) + 48);
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-    for (letter = 'b'; letter < 'a'; letter++)
-        putchar(letter);
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
-
